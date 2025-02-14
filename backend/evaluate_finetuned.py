@@ -46,4 +46,5 @@ print(f"✅ Fine-Tuned Model Accuracy: {accuracy * 100:.2f}%\n")
 
 # Print detailed classification report
 print("📊 Classification Report:")
-print(classification_report(actual_labels_names, predicted_labels))
+print(classification_report(actual_labels_names, predicted_labels, zero_division=1))
+
